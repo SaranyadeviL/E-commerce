@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Utilities.TestNGListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/HP/IdeaProjects/Ecommerce-1">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Tests_Bestbuy.BrandsTest">
+            <methods>
+                <include name="testBrandPage"/>
+            </methods>
+            </class>
+            <class name="Tests_Bestbuy.CheckOutTest">
+                <methods><include name="testCheckOutPage"/>
+                </methods>
+            </class>
+            <class name="Tests_Bestbuy.DepartmentTest">
+                <methods><include name="departmentTest"/>
+                </methods>
+            </class>
+            <class name="Tests_Bestbuy.ExtendReport">
+                <methods><include name="test"/>
+                </methods>
+            </class>
+            <class name="Tests_Bestbuy.HomeTest">
+                <methods>
+                    <include name="openWebTest"/>
+                    <include name="testBrokenLink"/>
+                    <include name="validateTitle"/>
+                    <include name="bottomLink"/>
+                </methods>
+            </class>
+            <class name="Tests_Bestbuy.Login">
+                <methods>
+                    <include name="testLoginPage"/>
+                </methods>
+            </class>
+            <class name="Tests_Bestbuy.NegativeLoginTest">
+                <methods><include name="testNegativeLoginPage"/>
+                </methods>
+            </class>
+            <class name="Tests_Bestbuy.NegativeSignUpTest">
+                <methods><include name="negativeSignUp"/>
+                </methods>
+            </class>
+            <class name="Tests_Bestbuy.ShoppingCartTest">
+                <methods><include name="searchProduct"/>
+                </methods>
+            </class>
+            <class name="Tests_Bestbuy.SignUpTest">
+                <methods>
+                    <include name="validatePositiveSignUp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
